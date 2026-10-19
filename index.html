@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>YPC Solutions | Power Platform, Automatisation, Web & IA</title>
+
+  <meta
+    name="description"
+    content="YPC Solutions accompagne les entreprises dans la conception d'applications métiers, l'automatisation, Microsoft Power Platform, Excel/VBA, le développement web, les API et l'intelligence artificielle."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <style>
+    :root {
+      --navy: #0b1220;
+      --navy-2: #111c30;
+      --blue: #0ea5e9;
+      --blue-dark: #0284c7;
+      --cyan: #22d3ee;
+      --white: #ffffff;
+      --light: #f5f8fc;
+      --light-2: #eef4f9;
+      --text: #172033;
+      --muted: #64748b;
+      --border: #dbe4ee;
+      --success: #059669;
+      --radius: 18px;
+      --shadow: 0 18px 50px rgba(15, 23, 42, 0.09);
+      --max-width: 1180px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(calc(100% - 40px), var(--max-width));
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(219, 228, 238, 0.8);
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.35rem;
+      color: var(--navy);
+    }
+
+    .brand-symbol {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background:
+        linear-gradient(135deg, var(--blue), var(--cyan));
+      font-weight: 900;
+      box-shadow: 0 8px 22px rgba(14, 165, 233, 0.25);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+
+    nav a {
+      font-size: 0.94rem;
+      font-weight: 600;
+      color: #334155;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--blue-dark);
+    }
+
+    .nav-contact {
+      padding: 11px 18px;
+      border-radius: 999px;
+      background: var(--navy);
+      color: white !important;
+    }
+
+    .menu-button {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: none;
+      border-radius: 10px;
+      background: var(--light);
+      cursor: pointer;
+      font-size: 1.4rem;
+    }
+
+    /* HERO */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 105px 0 95px;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(34, 211, 238, 0.14), transparent 25%),
+        radial-gradient(circle at 15% 70%, rgba(14, 165, 233, 0.1), transparent 28%),
+        linear-gradient(180deg, #f9fcff 0%, #ffffff 100%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.8fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 13px;
+      margin-bottom: 22px;
+      border-radius: 999px;
+      background: #e8f6fd;
+      color: #0369a1;
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      max-width: 800px;
+      font-size: clamp(2.5rem, 6vw, 4.7rem);
+      line-height: 1.04;
+      letter-spacing: -0.045em;
+      color: var(--navy);
+      margin-bottom: 24px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #0284c7, #06b6d4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 720px;
+      font-size: 1.12rem;
+      color: #526078;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 23px;
+      border-radius: 12px;
+      font-weight: 700;
+      transition: 0.2s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--navy);
+      color: white;
+      box-shadow: 0 10px 25px rgba(11, 18, 32, 0.18);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background: #17233a;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--navy);
+      border-color: var(--border);
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+      border-color: #94a3b8;
+    }
+
+    .hero-panel {
+      position: relative;
+      padding: 30px;
+      border-radius: 26px;
+      background: var(--navy);
+      color: white;
+      box-shadow: 0 25px 70px rgba(11, 18, 32, 0.25);
+    }
+
+    .hero-panel::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(135deg, rgba(34,211,238,.8), transparent 45%);
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+
+    .hero-panel h3 {
+      font-size: 1.25rem;
+      margin-bottom: 18px;
+    }
+
+    .capability {
+      display: flex;
+      gap: 14px;
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+
+    .capability:last-child {
+      border-bottom: none;
+    }
+
+    .capability-icon {
+      flex: 0 0 38px;
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: rgba(34, 211, 238, .12);
+      color: var(--cyan);
+      font-weight: 800;
+    }
+
+    .capability strong {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .capability span {
+      font-size: .88rem;
+      color: #b9c6d7;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-alt {
+      background: var(--light);
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 48px;
+    }
+
+    .section-label {
+      color: var(--blue-dark);
+      font-size: .82rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.12;
+      letter-spacing: -.025em;
+      margin-bottom: 17px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 1.06rem;
+    }
+
+    /* SERVICES */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      transition: .25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      border-color: #bae6fd;
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 20px;
+      background: #eaf7fd;
+      color: var(--blue-dark);
+      font-weight: 900;
+      font-size: 1.05rem;
+    }
+
+    .service-card h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    /* APPROCHE */
+
+    .approach-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .check-list {
+      display: grid;
+      gap: 15px;
+      margin-top: 28px;
+    }
+
+    .check-item {
+      display: flex;
+      gap: 13px;
+      align-items: flex-start;
+    }
+
+    .check {
+      flex: 0 0 24px;
+      width: 24px;
+      height: 24px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #dcfce7;
+      color: var(--success);
+      font-size: .8rem;
+      font-weight: 900;
+    }
+
+    .tech-panel {
+      background: var(--navy);
+      padding: 35px;
+      border-radius: 24px;
+      color: white;
+    }
+
+    .tech-panel h3 {
+      font-size: 1.35rem;
+      margin-bottom: 22px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      padding: 9px 13px;
+      border-radius: 999px;
+      font-size: .86rem;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.1);
+      color: #dce7f4;
+    }
+
+    /* CERTIFICATIONS */
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .cert-card {
+      padding: 25px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: white;
+    }
+
+    .cert-badge {
+      display: inline-block;
+      color: var(--blue-dark);
+      font-weight: 800;
+      font-size: .76rem;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      margin-bottom: 13px;
+    }
+
+    .cert-card h3 {
+      font-size: 1rem;
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+
+    .cert-card p {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    /* ABOUT */
+
+    .about-card {
+      display: grid;
+      grid-template-columns: .7fr 1.3fr;
+      gap: 45px;
+      padding: 42px;
+      border-radius: 26px;
+      background: var(--navy);
+      color: white;
+    }
+
+    .about-number {
+      font-size: 4rem;
+      font-weight: 900;
+      line-height: 1;
+      color: var(--cyan);
+    }
+
+    .about-number-label {
+      margin-top: 10px;
+      color: #cbd5e1;
+    }
+
+    .about-card h2 {
+      color: white;
+    }
+
+    .about-card p {
+      color: #cbd5e1;
+      margin-bottom: 15px;
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 50px;
+    }
+
+    .contact-info p {
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+
+    .contact-note {
+      padding: 17px;
+      border-radius: 14px;
+      background: #eaf7fd;
+      color: #075985;
+      font-size: .92rem;
+    }
+
+    form {
+      background: white;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .field {
+      margin-bottom: 17px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 7px;
+      font-weight: 700;
+      font-size: .9rem;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      border: 1px solid #cfd9e5;
+      border-radius: 11px;
+      padding: 13px 14px;
+      outline: none;
+      color: var(--text);
+      background: white;
+      transition: .2s;
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(14,165,233,.12);
+    }
+
+    .honeypot {
+      position: absolute !important;
+      left: -9999px !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+
+    .form-status {
+      margin-top: 12px;
+      font-size: .9rem;
+      min-height: 24px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #080e19;
+      color: #a8b5c7;
+      padding: 38px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      font-size: .88rem;
+    }
+
+    .footer-brand {
+      color: white;
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 950px) {
+      .hero-grid,
+      .approach-grid,
+      .contact-grid,
+      .about-card {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid,
+      .cert-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      nav ul {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+        background: white;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 12px 25px rgba(0,0,0,.07);
+      }
+
+      nav ul.open {
+        display: flex;
+      }
+
+      .menu-button {
+        display: block;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(calc(100% - 28px), var(--max-width));
+      }
+
+      .hero {
+        padding: 75px 0 65px;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .services-grid,
+      .cert-grid,
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-panel,
+      .about-card {
+        padding: 26px;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container navbar">
+
+    <a class="brand" href="#accueil">
+      <span class="brand-symbol">Y</span>
+      <span>YPC Solutions</span>
+    </a>
+
+    <nav>
+      <button
+        class="menu-button"
+        id="menuButton"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false">
+        ☰
+      </button>
+
+      <ul id="navMenu">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a class="nav-contact" href="#contact">Nous contacter</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="accueil">
+    <div class="container hero-grid">
+
+      <div>
+        <div class="eyebrow">
+          Solutions numériques pour les professionnels
+        </div>
+
+        <h1>
+          Transformez vos besoins métier en
+          <span class="gradient-text">solutions numériques.</span>
+        </h1>
+
+        <p>
+          YPC Solutions conçoit des applications métiers,
+          automatise vos processus et développe des solutions
+          sur mesure autour de Microsoft Power Platform,
+          du Web, d'Excel/VBA, des API et de l'intelligence artificielle.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#services">
+            Découvrir nos services
+          </a>
+
+          <a class="btn btn-secondary" href="#contact">
+            Parler de votre projet
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <h3>Une expertise orientée métier</h3>
+
+        <div class="capability">
+          <div class="capability-icon">01</div>
+          <div>
+            <strong>Power Platform</strong>
+            <span>Applications, automatisation et données.</span>
+          </div>
+        </div>
+
+        <div class="capability">
+          <div class="capability-icon">02</div>
+          <div>
+            <strong>Solutions sur mesure</strong>
+            <span>Web, Excel/VBA, API et intégrations.</span>
+          </div>
+        </div>
+
+        <div class="capability">
+          <div class="capability-icon">03</div>
+          <div>
+            <strong>IA appliquée</strong>
+            <span>Accélérer la conception, le développement et l'automatisation.</span>
+          </div>
+        </div>
+
+        <div class="capability">
+          <div class="capability-icon">04</div>
+          <div>
+            <strong>Sécurité & performance</strong>
+            <span>Des solutions pensées pour durer et évoluer.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICES -->
+  <section id="services" class="section-alt">
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="section-label">Nos services</div>
+
+        <h2>
+          Des solutions adaptées à votre besoin,
+          pas l'inverse.
+        </h2>
+
+        <p>
+          De l'application métier à l'automatisation d'un processus,
+          YPC Solutions sélectionne les technologies adaptées
+          à votre contexte et à vos objectifs.
+        </p>
+      </div>
+
+
+      <div class="services-grid">
+
+        <article class="service-card">
+          <div class="service-icon">PA</div>
+          <h3>Microsoft Power Platform</h3>
+          <p>
+            Conception d'applications Power Apps, automatisations
+            Power Automate, Dataverse, SharePoint et solutions
+            professionnelles intégrées à Microsoft 365.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">AU</div>
+          <h3>Automatisation</h3>
+          <p>
+            Automatisation de tâches répétitives, workflows métier,
+            notifications, traitements de données et intégration
+            de différents systèmes.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">XL</div>
+          <h3>Excel & VBA</h3>
+          <p>
+            Création d'outils métier Excel, formulaires,
+            automatisations VBA, contrôles de saisie,
+            tableaux de bord et traitements personnalisés.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">WEB</div>
+          <h3>Développement Web</h3>
+          <p>
+            Sites vitrines, interfaces web et applications
+            responsives adaptées aux besoins des professionnels.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">API</div>
+          <h3>API & Intégrations</h3>
+          <p>
+            Connexion de services, API REST, connecteurs personnalisés
+            et échanges sécurisés entre vos différentes solutions.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">IA</div>
+          <h3>IA appliquée au développement</h3>
+          <p>
+            Utilisation de l'intelligence artificielle pour accélérer
+            l'analyse, le prototypage, le développement,
+            les tests et la documentation.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- EXPERTISE -->
+  <section id="expertise">
+    <div class="container approach-grid">
+
+      <div>
+        <div class="section-label">Notre approche</div>
+
+        <h2>
+          Une solution doit être simple à utiliser,
+          fiable et évolutive.
+        </h2>
+
+        <p>
+          Notre priorité est de comprendre le besoin métier avant
+          de choisir la technologie. Power Platform constitue notre
+          expertise principale, complétée par d'autres technologies
+          lorsqu'elles sont plus adaptées.
+        </p>
+
+        <div class="check-list">
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            <div>
+              <strong>Analyse du besoin</strong><br>
+              Comprendre les utilisateurs, les contraintes
+              et le processus métier.
+            </div>
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            <div>
+              <strong>Sécurité dès la conception</strong><br>
+              Gestion des accès, protection des données
+              et réduction des risques.
+            </div>
+          </div>
+
+          <div class="check-item">
+            <span class="check">✓</span>
+            <div>
+              <strong>Performance & évolutivité</strong><br>
+              Concevoir des solutions maintenables,
+              optimisées et capables d'évoluer.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="tech-panel">
+
+        <h3>Environnement technique</h3>
+
+        <div class="tags">
+          <span class="tag">Power Apps</span>
+          <span class="tag">Power Automate</span>
+          <span class="tag">Dataverse</span>
+          <span class="tag">SharePoint</span>
+          <span class="tag">Microsoft 365</span>
+          <span class="tag">API REST</span>
+          <span class="tag">Connecteurs personnalisés</span>
+          <span class="tag">Excel</span>
+          <span class="tag">VBA</span>
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Python</span>
+          <span class="tag">Azure Functions</span>
+          <span class="tag">Intelligence artificielle</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section-alt">
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="section-label">Certifications</div>
+
+        <h2>Compétences Microsoft validées</h2>
+
+        <p>
+          Des certifications et Applied Skills Microsoft
+          complètent l'expérience acquise sur des projets professionnels.
+        </p>
+      </div>
+
+
+      <div class="cert-grid">
+
+        <article class="cert-card">
+          <span class="cert-badge">Microsoft Certified</span>
+          <h3>
+            Power Platform Fundamentals
+            (PL-900)
+          </h3>
+          <p>
+            Certification Microsoft Power Platform.
+          </p>
+        </article>
+
+        <article class="cert-card">
+          <span class="cert-badge">Microsoft Applied Skills</span>
+          <h3>
+            Créer et gérer des applications canevas avec Power Apps
+          </h3>
+          <p>
+            Compétence Microsoft vérifiable en ligne.
+          </p>
+        </article>
+
+        <article class="cert-card">
+          <span class="cert-badge">Microsoft Applied Skills</span>
+          <h3>
+            Créer et gérer des processus automatisés
+            à l'aide de Power Automate
+          </h3>
+          <p>
+            Compétence Microsoft vérifiable en ligne.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- A PROPOS -->
+  <section id="apropos">
+    <div class="container">
+
+      <div class="about-card">
+
+        <div>
+          <div class="about-number">7+</div>
+          <div class="about-number-label">
+            années d'expérience dans la conception
+            de solutions numériques.
+          </div>
+        </div>
+
+        <div>
+          <div class="section-label" style="color:#22d3ee;">
+            À propos
+          </div>
+
+          <h2>YPC Solutions</h2>
+
+          <p>
+            YPC Solutions accompagne les professionnels dans la
+            digitalisation de leurs processus et la création
+            d'outils métier adaptés à leurs besoins.
+          </p>
+
+          <p>
+            Spécialisée dans Microsoft Power Platform,
+            l'activité s'appuie également sur le développement web,
+            Excel/VBA, les API, Python et l'intelligence artificielle
+            afin de proposer la solution la plus pertinente
+            selon chaque projet.
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-alt">
+    <div class="container contact-grid">
+
+      <div class="contact-info">
+
+        <div class="section-label">
+          Contact
+        </div>
+
+        <h2>
+          Parlons de votre projet
+        </h2>
+
+        <p>
+          Vous avez besoin d'une application métier,
+          d'une automatisation, d'un outil Excel,
+          d'un site web ou d'une intégration spécifique ?
+          Présentez-nous votre besoin.
+        </p>
+
+        <div class="contact-note">
+          Le formulaire sécurisé sera activé prochainement.
+          Aucune donnée n'est actuellement transmise depuis cette page.
+        </div>
+
+      </div>
+
+
+      <form id="contactForm" novalidate>
+
+        <div class="form-row">
+
+          <div class="field">
+            <label for="name">Nom *</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              maxlength="80"
+              autocomplete="name"
+              required
+            >
+          </div>
+
+          <div class="field">
+            <label for="company">Entreprise</label>
+            <input
+              id="company"
+              name="company"
+              type="text"
+              maxlength="100"
+              autocomplete="organization"
+            >
+          </div>
+
+        </div>
+
+
+        <div class="field">
+          <label for="email">Adresse e-mail *</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            maxlength="120"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+
+        <div class="field">
+          <label for="subject">Votre besoin *</label>
+
+          <select id="subject" name="subject" required>
+            <option value="">Sélectionner</option>
+            <option>Power Platform</option>
+            <option>Automatisation</option>
+            <option>Excel / VBA</option>
+            <option>Développement Web</option>
+            <option>API / Intégration</option>
+            <option>Intelligence artificielle</option>
+            <option>Autre projet</option>
+          </select>
+        </div>
+
+
+        <div class="field">
+          <label for="message">Message *</label>
+
+          <textarea
+            id="message"
+            name="message"
+            maxlength="2000"
+            placeholder="Décrivez brièvement votre besoin..."
+            required
+          ></textarea>
+        </div>
+
+
+        <!-- Champ invisible anti-bot -->
+        <div class="honeypot" aria-hidden="true">
+          <label for="website">Site internet</label>
+          <input
+            id="website"
+            name="website"
+            type="text"
+            tabindex="-1"
+            autocomplete="off"
+          >
+        </div>
+
+
+        <button class="btn btn-primary" type="submit">
+          Envoyer ma demande
+        </button>
+
+        <div
+          class="form-status"
+          id="formStatus"
+          aria-live="polite">
+        </div>
+
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer>
+  <div class="container footer-content">
+
+    <div>
+      <div class="footer-brand">
+        YPC Solutions
+      </div>
+
+      <div>
+        Applications métiers • Automatisation • Web • IA
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <a href="#">Mentions légales</a>
+      <a href="#">Confidentialité</a>
+    </div>
+
+    <div>
+      © <span id="year"></span> YPC Solutions
+    </div>
+
+  </div>
+</footer>
+
+
+<script>
+  const menuButton = document.getElementById("menuButton");
+  const navMenu = document.getElementById("navMenu");
+
+  menuButton.addEventListener("click", () => {
+    const opened = navMenu.classList.toggle("open");
+
+    menuButton.setAttribute(
+      "aria-expanded",
+      opened ? "true" : "false"
+    );
+  });
+
+
+  document.querySelectorAll("#navMenu a").forEach(link => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+    });
+  });
+
+
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+
+  const form = document.getElementById("contactForm");
+  const status = document.getElementById("formStatus");
+
+  form.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const honeypot =
+      document.getElementById("website").value.trim();
+
+    if (honeypot !== "") {
+      return;
+    }
+
+    if (!form.checkValidity()) {
+
+      status.textContent =
+        "Merci de compléter correctement les champs obligatoires.";
+
+      status.style.color = "#b91c1c";
+
+      form.reportValidity();
+
+      return;
+    }
+
+    status.textContent =
+      "Le formulaire est prêt. L'envoi sécurisé sera activé à l'étape suivante.";
+
+    status.style.color = "#047857";
+  });
+</script>
+
+</body>
+</html>
