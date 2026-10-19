@@ -2,13 +2,19 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>YPC Solutions | Power Platform, Automatisation, Web & IA</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    YPC Solutions | Power Platform, Automatisation, Web & IA
+  </title>
 
   <meta
     name="description"
-    content="YPC Solutions accompagne les entreprises dans la conception d'applications métiers, l'automatisation, Microsoft Power Platform, Excel/VBA, le développement web, les API et l'intelligence artificielle."
+    content="YPC Solutions accompagne les professionnels dans la conception d'applications métiers, l'automatisation, Microsoft Power Platform, Excel/VBA, le développement web, les API et l'intelligence artificielle."
   >
 
   <meta name="robots" content="index, follow">
@@ -51,6 +57,7 @@
         Roboto,
         Arial,
         sans-serif;
+
       color: var(--text);
       background: var(--white);
       line-height: 1.6;
@@ -68,10 +75,6 @@
       font: inherit;
     }
 
-    img {
-      max-width: 100%;
-    }
-
     .container {
       width: min(calc(100% - 40px), var(--max-width));
       margin: 0 auto;
@@ -83,16 +86,20 @@
       position: sticky;
       top: 0;
       z-index: 1000;
+
       background: rgba(255, 255, 255, 0.96);
       backdrop-filter: blur(14px);
+
       border-bottom: 1px solid rgba(219, 228, 238, 0.8);
     }
 
     .navbar {
       min-height: 76px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       gap: 30px;
     }
 
@@ -100,35 +107,53 @@
       display: flex;
       align-items: center;
       gap: 12px;
+
       font-weight: 800;
       font-size: 1.35rem;
+
       color: var(--navy);
     }
 
     .brand-symbol {
       width: 42px;
       height: 42px;
+
       border-radius: 12px;
+
       display: grid;
       place-items: center;
+
       color: white;
+
       background:
-        linear-gradient(135deg, var(--blue), var(--cyan));
+        linear-gradient(
+          135deg,
+          var(--blue),
+          var(--cyan)
+        );
+
       font-weight: 900;
-      box-shadow: 0 8px 22px rgba(14, 165, 233, 0.25);
+
+      box-shadow:
+        0 8px 22px
+        rgba(14, 165, 233, 0.25);
     }
 
     nav ul {
       list-style: none;
+
       display: flex;
       align-items: center;
-      gap: 26px;
+
+      gap: 24px;
     }
 
     nav a {
-      font-size: 0.94rem;
+      font-size: 0.92rem;
       font-weight: 600;
+
       color: #334155;
+
       transition: 0.2s;
     }
 
@@ -138,19 +163,27 @@
 
     .nav-contact {
       padding: 11px 18px;
+
       border-radius: 999px;
+
       background: var(--navy);
+
       color: white !important;
     }
 
     .menu-button {
       display: none;
+
       width: 44px;
       height: 44px;
+
       border: none;
       border-radius: 10px;
+
       background: var(--light);
+
       cursor: pointer;
+
       font-size: 1.4rem;
     }
 
@@ -159,59 +192,99 @@
     .hero {
       position: relative;
       overflow: hidden;
-      padding: 105px 0 95px;
+
+      padding: 100px 0 95px;
+
       background:
-        radial-gradient(circle at 85% 20%, rgba(34, 211, 238, 0.14), transparent 25%),
-        radial-gradient(circle at 15% 70%, rgba(14, 165, 233, 0.1), transparent 28%),
-        linear-gradient(180deg, #f9fcff 0%, #ffffff 100%);
+        radial-gradient(
+          circle at 85% 20%,
+          rgba(34, 211, 238, 0.14),
+          transparent 25%
+        ),
+        radial-gradient(
+          circle at 15% 70%,
+          rgba(14, 165, 233, 0.10),
+          transparent 28%
+        ),
+        linear-gradient(
+          180deg,
+          #f9fcff 0%,
+          #ffffff 100%
+        );
     }
 
     .hero-grid {
       display: grid;
+
       grid-template-columns: 1.3fr 0.8fr;
+
       gap: 70px;
+
       align-items: center;
     }
 
     .eyebrow {
       display: inline-flex;
       align-items: center;
+
       gap: 8px;
+
       padding: 8px 13px;
+
       margin-bottom: 22px;
+
       border-radius: 999px;
+
       background: #e8f6fd;
+
       color: #0369a1;
+
       font-size: 0.84rem;
       font-weight: 700;
     }
 
     h1 {
-      max-width: 800px;
-      font-size: clamp(2.5rem, 6vw, 4.7rem);
+      max-width: 780px;
+
+      font-size: clamp(2.5rem, 5.4vw, 4.4rem);
+
       line-height: 1.04;
+
       letter-spacing: -0.045em;
+
       color: var(--navy);
+
       margin-bottom: 24px;
     }
 
     .gradient-text {
-      background: linear-gradient(90deg, #0284c7, #06b6d4);
+      background:
+        linear-gradient(
+          90deg,
+          #0284c7,
+          #06b6d4
+        );
+
       -webkit-background-clip: text;
       background-clip: text;
+
       color: transparent;
     }
 
     .hero p {
       max-width: 720px;
+
       font-size: 1.12rem;
+
       color: #526078;
+
       margin-bottom: 32px;
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
+
       gap: 14px;
     }
 
@@ -219,70 +292,83 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
+
       min-height: 50px;
+
       padding: 0 23px;
+
       border-radius: 12px;
+
       font-weight: 700;
+
       transition: 0.2s ease;
+
       border: 1px solid transparent;
+
+      cursor: pointer;
     }
 
     .btn-primary {
       background: var(--navy);
+
       color: white;
-      box-shadow: 0 10px 25px rgba(11, 18, 32, 0.18);
+
+      box-shadow:
+        0 10px 25px
+        rgba(11, 18, 32, 0.18);
     }
 
     .btn-primary:hover {
       transform: translateY(-2px);
+
       background: #17233a;
     }
 
     .btn-secondary {
       background: white;
+
       color: var(--navy);
+
       border-color: var(--border);
     }
 
     .btn-secondary:hover {
       transform: translateY(-2px);
+
       border-color: #94a3b8;
     }
 
     .hero-panel {
       position: relative;
-      padding: 30px;
-      border-radius: 26px;
-      background: var(--navy);
-      color: white;
-      box-shadow: 0 25px 70px rgba(11, 18, 32, 0.25);
-    }
 
-    .hero-panel::before {
-      content: "";
-      position: absolute;
-      inset: -1px;
-      border-radius: inherit;
-      padding: 1px;
-      background: linear-gradient(135deg, rgba(34,211,238,.8), transparent 45%);
-      -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-      pointer-events: none;
+      padding: 30px;
+
+      border-radius: 26px;
+
+      background: var(--navy);
+
+      color: white;
+
+      box-shadow:
+        0 25px 70px
+        rgba(11, 18, 32, 0.25);
     }
 
     .hero-panel h3 {
       font-size: 1.25rem;
+
       margin-bottom: 18px;
     }
 
     .capability {
       display: flex;
+
       gap: 14px;
+
       padding: 15px 0;
-      border-bottom: 1px solid rgba(255,255,255,.1);
+
+      border-bottom:
+        1px solid rgba(255,255,255,.1);
     }
 
     .capability:last-child {
@@ -291,23 +377,32 @@
 
     .capability-icon {
       flex: 0 0 38px;
+
       width: 38px;
       height: 38px;
+
       display: grid;
       place-items: center;
+
       border-radius: 10px;
-      background: rgba(34, 211, 238, .12);
+
+      background:
+        rgba(34, 211, 238, .12);
+
       color: var(--cyan);
+
       font-weight: 800;
     }
 
     .capability strong {
       display: block;
+
       margin-bottom: 2px;
     }
 
     .capability span {
       font-size: .88rem;
+
       color: #b9c6d7;
     }
 
@@ -322,29 +417,39 @@
     }
 
     .section-heading {
-      max-width: 760px;
+      max-width: 780px;
+
       margin-bottom: 48px;
     }
 
     .section-label {
       color: var(--blue-dark);
+
       font-size: .82rem;
       font-weight: 800;
+
       letter-spacing: .08em;
+
       text-transform: uppercase;
+
       margin-bottom: 12px;
     }
 
     h2 {
       color: var(--navy);
+
       font-size: clamp(2rem, 4vw, 3rem);
+
       line-height: 1.12;
+
       letter-spacing: -.025em;
+
       margin-bottom: 17px;
     }
 
     .section-heading p {
       color: var(--muted);
+
       font-size: 1.06rem;
     }
 
@@ -352,45 +457,68 @@
 
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
       gap: 22px;
     }
 
     .service-card {
       background: white;
-      border: 1px solid var(--border);
+
+      border:
+        1px solid var(--border);
+
       border-radius: var(--radius);
+
       padding: 28px;
+
       transition: .25s ease;
     }
 
     .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow);
-      border-color: #bae6fd;
+      transform:
+        translateY(-5px);
+
+      box-shadow:
+        var(--shadow);
+
+      border-color:
+        #bae6fd;
     }
 
     .service-icon {
       width: 48px;
       height: 48px;
+
       border-radius: 13px;
+
       display: grid;
       place-items: center;
+
       margin-bottom: 20px;
+
       background: #eaf7fd;
+
       color: var(--blue-dark);
+
       font-weight: 900;
+
       font-size: 1.05rem;
     }
 
     .service-card h3 {
       color: var(--navy);
+
       margin-bottom: 10px;
+
       font-size: 1.1rem;
     }
 
     .service-card p {
       color: var(--muted);
+
       font-size: .95rem;
     }
 
@@ -398,120 +526,334 @@
 
     .approach-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+
+      grid-template-columns:
+        1fr 1fr;
+
       gap: 50px;
+
       align-items: center;
     }
 
     .check-list {
       display: grid;
+
       gap: 15px;
+
       margin-top: 28px;
     }
 
     .check-item {
       display: flex;
+
       gap: 13px;
+
       align-items: flex-start;
     }
 
     .check {
       flex: 0 0 24px;
+
       width: 24px;
       height: 24px;
+
       display: grid;
       place-items: center;
+
       border-radius: 50%;
+
       background: #dcfce7;
+
       color: var(--success);
+
       font-size: .8rem;
+
       font-weight: 900;
     }
 
     .tech-panel {
       background: var(--navy);
+
       padding: 35px;
+
       border-radius: 24px;
+
       color: white;
     }
 
     .tech-panel h3 {
       font-size: 1.35rem;
+
       margin-bottom: 22px;
     }
 
     .tags {
       display: flex;
+
       flex-wrap: wrap;
+
       gap: 10px;
     }
 
     .tag {
       padding: 9px 13px;
+
       border-radius: 999px;
+
       font-size: .86rem;
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.1);
+
+      background:
+        rgba(255,255,255,.08);
+
+      border:
+        1px solid rgba(255,255,255,.1);
+
       color: #dce7f4;
+    }
+
+    /* REALISATIONS */
+
+    .project-section {
+      margin-top: 50px;
+    }
+
+    .project-section:first-of-type {
+      margin-top: 0;
+    }
+
+    .project-section-title {
+      display: flex;
+      align-items: center;
+
+      gap: 12px;
+
+      margin-bottom: 22px;
+
+      font-size: 1.25rem;
+
+      color: var(--navy);
+    }
+
+    .project-section-title::before {
+      content: "";
+
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+
+      background: var(--cyan);
+
+      box-shadow:
+        0 0 0 6px
+        rgba(34,211,238,.12);
+    }
+
+    .projects-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 22px;
+    }
+
+    .project-card {
+      position: relative;
+
+      overflow: hidden;
+
+      background: white;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: var(--radius);
+
+      padding: 28px;
+
+      transition: .25s ease;
+    }
+
+    .project-card:hover {
+      transform:
+        translateY(-5px);
+
+      box-shadow:
+        var(--shadow);
+
+      border-color:
+        #bae6fd;
+    }
+
+    .project-number {
+      margin-bottom: 18px;
+
+      font-size: .76rem;
+      font-weight: 800;
+
+      letter-spacing: .08em;
+
+      color: var(--blue-dark);
+    }
+
+    .project-card h3 {
+      color: var(--navy);
+
+      margin-bottom: 10px;
+
+      font-size: 1.08rem;
+
+      line-height: 1.4;
+    }
+
+    .project-card p {
+      color: var(--muted);
+
+      font-size: .94rem;
+
+      margin-bottom: 18px;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 8px;
+    }
+
+    .project-tag {
+      padding: 6px 10px;
+
+      border-radius: 999px;
+
+      background: #eef7fc;
+
+      color: #0369a1;
+
+      font-size: .78rem;
+
+      font-weight: 700;
+    }
+
+    .project-highlight {
+      display: inline-flex;
+
+      align-items: center;
+
+      margin-bottom: 14px;
+
+      padding: 6px 10px;
+
+      border-radius: 999px;
+
+      background: #ecfdf5;
+
+      color: #047857;
+
+      font-size: .78rem;
+
+      font-weight: 800;
     }
 
     /* CERTIFICATIONS */
 
     .cert-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
       gap: 20px;
     }
 
     .cert-card {
       padding: 25px;
+
       border-radius: var(--radius);
-      border: 1px solid var(--border);
+
+      border:
+        1px solid var(--border);
+
       background: white;
+
+      transition: .25s ease;
+    }
+
+    .cert-card:hover {
+      transform: translateY(-4px);
+
+      box-shadow: var(--shadow);
     }
 
     .cert-badge {
       display: inline-block;
+
       color: var(--blue-dark);
+
       font-weight: 800;
+
       font-size: .76rem;
+
       text-transform: uppercase;
+
       letter-spacing: .07em;
+
       margin-bottom: 13px;
     }
 
     .cert-card h3 {
       font-size: 1rem;
+
       line-height: 1.4;
+
       margin-bottom: 8px;
+
+      color: var(--navy);
     }
 
-    .cert-card p {
+    .cert-date {
+      display: block;
+
+      margin-top: 14px;
+
       color: var(--muted);
-      font-size: .9rem;
+
+      font-size: .85rem;
     }
 
     /* ABOUT */
 
     .about-card {
       display: grid;
-      grid-template-columns: .7fr 1.3fr;
+
+      grid-template-columns:
+        .7fr 1.3fr;
+
       gap: 45px;
+
       padding: 42px;
+
       border-radius: 26px;
+
       background: var(--navy);
+
       color: white;
     }
 
     .about-number {
       font-size: 4rem;
+
       font-weight: 900;
+
       line-height: 1;
+
       color: var(--cyan);
     }
 
     .about-number-label {
       margin-top: 10px;
+
       color: #cbd5e1;
     }
 
@@ -521,6 +863,7 @@
 
     .about-card p {
       color: #cbd5e1;
+
       margin-bottom: 15px;
     }
 
@@ -528,34 +871,51 @@
 
     .contact-grid {
       display: grid;
-      grid-template-columns: .85fr 1.15fr;
+
+      grid-template-columns:
+        .85fr 1.15fr;
+
       gap: 50px;
     }
 
     .contact-info p {
       color: var(--muted);
+
       margin-bottom: 25px;
     }
 
     .contact-note {
       padding: 17px;
+
       border-radius: 14px;
+
       background: #eaf7fd;
+
       color: #075985;
+
       font-size: .92rem;
     }
 
     form {
       background: white;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
+
+      border:
+        1px solid var(--border);
+
+      box-shadow:
+        var(--shadow);
+
       padding: 30px;
+
       border-radius: 20px;
     }
 
     .form-row {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+
+      grid-template-columns:
+        1fr 1fr;
+
       gap: 16px;
     }
 
@@ -565,8 +925,11 @@
 
     label {
       display: block;
+
       margin-bottom: 7px;
+
       font-weight: 700;
+
       font-size: .9rem;
     }
 
@@ -574,37 +937,55 @@
     textarea,
     select {
       width: 100%;
-      border: 1px solid #cfd9e5;
+
+      border:
+        1px solid #cfd9e5;
+
       border-radius: 11px;
+
       padding: 13px 14px;
+
       outline: none;
+
       color: var(--text);
+
       background: white;
+
       transition: .2s;
     }
 
     textarea {
       min-height: 140px;
+
       resize: vertical;
     }
 
     input:focus,
     textarea:focus,
     select:focus {
-      border-color: var(--blue);
-      box-shadow: 0 0 0 3px rgba(14,165,233,.12);
+      border-color:
+        var(--blue);
+
+      box-shadow:
+        0 0 0 3px
+        rgba(14,165,233,.12);
     }
 
     .honeypot {
       position: absolute !important;
+
       left: -9999px !important;
+
       opacity: 0 !important;
+
       pointer-events: none !important;
     }
 
     .form-status {
       margin-top: 12px;
+
       font-size: .9rem;
+
       min-height: 24px;
     }
 
@@ -612,26 +993,36 @@
 
     footer {
       background: #080e19;
+
       color: #a8b5c7;
+
       padding: 38px 0;
     }
 
     .footer-content {
       display: flex;
-      justify-content: space-between;
+
+      justify-content:
+        space-between;
+
       align-items: center;
+
       gap: 30px;
+
       font-size: .88rem;
     }
 
     .footer-brand {
       color: white;
+
       font-weight: 800;
+
       font-size: 1rem;
     }
 
     .footer-links {
       display: flex;
+
       gap: 20px;
     }
 
@@ -640,6 +1031,16 @@
     }
 
     /* RESPONSIVE */
+
+    @media (max-width: 1050px) {
+      nav ul {
+        gap: 16px;
+      }
+
+      nav a {
+        font-size: .86rem;
+      }
+    }
 
     @media (max-width: 950px) {
       .hero-grid,
@@ -650,22 +1051,35 @@
       }
 
       .services-grid,
-      .cert-grid {
-        grid-template-columns: repeat(2, 1fr);
+      .cert-grid,
+      .projects-grid {
+        grid-template-columns:
+          repeat(2, 1fr);
       }
 
       nav ul {
         display: none;
+
         position: absolute;
+
         top: 76px;
         left: 0;
         right: 0;
+
         flex-direction: column;
+
         align-items: stretch;
+
         padding: 20px;
+
         background: white;
-        border-bottom: 1px solid var(--border);
-        box-shadow: 0 12px 25px rgba(0,0,0,.07);
+
+        border-bottom:
+          1px solid var(--border);
+
+        box-shadow:
+          0 12px 25px
+          rgba(0,0,0,.07);
       }
 
       nav ul.open {
@@ -679,19 +1093,26 @@
 
     @media (max-width: 640px) {
       .container {
-        width: min(calc(100% - 28px), var(--max-width));
+        width:
+          min(
+            calc(100% - 28px),
+            var(--max-width)
+          );
       }
 
       .hero {
-        padding: 75px 0 65px;
+        padding:
+          75px 0 65px;
       }
 
       section {
-        padding: 65px 0;
+        padding:
+          65px 0;
       }
 
       .services-grid,
       .cert-grid,
+      .projects-grid,
       .form-row {
         grid-template-columns: 1fr;
       }
@@ -703,11 +1124,13 @@
 
       .footer-content {
         flex-direction: column;
+
         align-items: flex-start;
       }
     }
   </style>
 </head>
+
 
 <body>
 
@@ -715,111 +1138,229 @@
   <div class="container navbar">
 
     <a class="brand" href="#accueil">
-      <span class="brand-symbol">Y</span>
-      <span>YPC Solutions</span>
+      <span class="brand-symbol">
+        Y
+      </span>
+
+      <span>
+        YPC Solutions
+      </span>
     </a>
 
     <nav>
+
       <button
         class="menu-button"
         id="menuButton"
         aria-label="Ouvrir le menu"
-        aria-expanded="false">
+        aria-expanded="false"
+      >
         ☰
       </button>
 
       <ul id="navMenu">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#expertise">Expertise</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a class="nav-contact" href="#contact">Nous contacter</a></li>
+
+        <li>
+          <a href="#services">
+            Services
+          </a>
+        </li>
+
+        <li>
+          <a href="#expertise">
+            Expertise
+          </a>
+        </li>
+
+        <li>
+          <a href="#realisations">
+            Réalisations
+          </a>
+        </li>
+
+        <li>
+          <a href="#certifications">
+            Certifications
+          </a>
+        </li>
+
+        <li>
+          <a href="#apropos">
+            À propos
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="nav-contact"
+            href="#contact"
+          >
+            Nous contacter
+          </a>
+        </li>
+
       </ul>
+
     </nav>
 
   </div>
 </header>
 
+
 <main>
 
-  <!-- HERO -->
-  <section class="hero" id="accueil">
+  <!-- ACCUEIL -->
+
+  <section
+    class="hero"
+    id="accueil"
+  >
+
     <div class="container hero-grid">
 
       <div>
+
         <div class="eyebrow">
           Solutions numériques pour les professionnels
         </div>
 
         <h1>
           Transformez vos besoins métier en
-          <span class="gradient-text">solutions numériques.</span>
+          <span class="gradient-text">
+            solutions numériques.
+          </span>
         </h1>
 
         <p>
           YPC Solutions conçoit des applications métiers,
           automatise vos processus et développe des solutions
           sur mesure autour de Microsoft Power Platform,
-          du Web, d'Excel/VBA, des API et de l'intelligence artificielle.
+          du Web, d'Excel/VBA, des API et de
+          l'intelligence artificielle.
         </p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#services">
+
+          <a
+            class="btn btn-primary"
+            href="#services"
+          >
             Découvrir nos services
           </a>
 
-          <a class="btn btn-secondary" href="#contact">
+          <a
+            class="btn btn-secondary"
+            href="#contact"
+          >
             Parler de votre projet
           </a>
+
         </div>
+
       </div>
+
 
       <div class="hero-panel">
-        <h3>Une expertise orientée métier</h3>
+
+        <h3>
+          Une expertise orientée métier
+        </h3>
 
         <div class="capability">
-          <div class="capability-icon">01</div>
-          <div>
-            <strong>Power Platform</strong>
-            <span>Applications, automatisation et données.</span>
+
+          <div class="capability-icon">
+            01
           </div>
+
+          <div>
+            <strong>
+              Power Platform
+            </strong>
+
+            <span>
+              Applications, automatisation et données.
+            </span>
+          </div>
+
         </div>
 
         <div class="capability">
-          <div class="capability-icon">02</div>
-          <div>
-            <strong>Solutions sur mesure</strong>
-            <span>Web, Excel/VBA, API et intégrations.</span>
+
+          <div class="capability-icon">
+            02
           </div>
+
+          <div>
+            <strong>
+              Solutions sur mesure
+            </strong>
+
+            <span>
+              Web, Excel/VBA, API et intégrations.
+            </span>
+          </div>
+
         </div>
 
         <div class="capability">
-          <div class="capability-icon">03</div>
-          <div>
-            <strong>IA appliquée</strong>
-            <span>Accélérer la conception, le développement et l'automatisation.</span>
+
+          <div class="capability-icon">
+            03
           </div>
+
+          <div>
+            <strong>
+              IA appliquée
+            </strong>
+
+            <span>
+              Accélérer la conception,
+              le développement et l'automatisation.
+            </span>
+          </div>
+
         </div>
 
         <div class="capability">
-          <div class="capability-icon">04</div>
-          <div>
-            <strong>Sécurité & performance</strong>
-            <span>Des solutions pensées pour durer et évoluer.</span>
+
+          <div class="capability-icon">
+            04
           </div>
+
+          <div>
+            <strong>
+              Sécurité & performance
+            </strong>
+
+            <span>
+              Des solutions pensées
+              pour durer et évoluer.
+            </span>
+          </div>
+
         </div>
 
       </div>
+
     </div>
+
   </section>
 
 
   <!-- SERVICES -->
-  <section id="services" class="section-alt">
+
+  <section
+    id="services"
+    class="section-alt"
+  >
+
     <div class="container">
 
       <div class="section-heading">
-        <div class="section-label">Nos services</div>
+
+        <div class="section-label">
+          Nos services
+        </div>
 
         <h2>
           Des solutions adaptées à votre besoin,
@@ -827,255 +1368,819 @@
         </h2>
 
         <p>
-          De l'application métier à l'automatisation d'un processus,
-          YPC Solutions sélectionne les technologies adaptées
-          à votre contexte et à vos objectifs.
+          De l'application métier à l'automatisation
+          d'un processus, YPC Solutions sélectionne
+          les technologies adaptées à votre contexte
+          et à vos objectifs.
         </p>
+
       </div>
 
 
       <div class="services-grid">
 
         <article class="service-card">
-          <div class="service-icon">PA</div>
-          <h3>Microsoft Power Platform</h3>
+
+          <div class="service-icon">
+            PA
+          </div>
+
+          <h3>
+            Microsoft Power Platform
+          </h3>
+
           <p>
-            Conception d'applications Power Apps, automatisations
-            Power Automate, Dataverse, SharePoint et solutions
+            Conception d'applications Power Apps,
+            automatisations Power Automate,
+            Dataverse, SharePoint et solutions
             professionnelles intégrées à Microsoft 365.
           </p>
+
         </article>
 
+
         <article class="service-card">
-          <div class="service-icon">AU</div>
-          <h3>Automatisation</h3>
+
+          <div class="service-icon">
+            AU
+          </div>
+
+          <h3>
+            Automatisation
+          </h3>
+
           <p>
-            Automatisation de tâches répétitives, workflows métier,
-            notifications, traitements de données et intégration
+            Automatisation de tâches répétitives,
+            workflows métier, notifications,
+            traitements de données et intégration
             de différents systèmes.
           </p>
+
         </article>
 
+
         <article class="service-card">
-          <div class="service-icon">XL</div>
-          <h3>Excel & VBA</h3>
+
+          <div class="service-icon">
+            XL
+          </div>
+
+          <h3>
+            Excel & VBA
+          </h3>
+
           <p>
-            Création d'outils métier Excel, formulaires,
-            automatisations VBA, contrôles de saisie,
-            tableaux de bord et traitements personnalisés.
+            Création d'outils métier Excel,
+            formulaires, automatisations VBA,
+            contrôles de saisie, tableaux de bord
+            et traitements personnalisés.
           </p>
+
         </article>
 
+
         <article class="service-card">
-          <div class="service-icon">WEB</div>
-          <h3>Développement Web</h3>
+
+          <div class="service-icon">
+            WEB
+          </div>
+
+          <h3>
+            Développement Web
+          </h3>
+
           <p>
-            Sites vitrines, interfaces web et applications
-            responsives adaptées aux besoins des professionnels.
+            Sites vitrines, interfaces web
+            et applications responsives
+            adaptées aux besoins
+            des professionnels.
           </p>
+
         </article>
 
+
         <article class="service-card">
-          <div class="service-icon">API</div>
-          <h3>API & Intégrations</h3>
+
+          <div class="service-icon">
+            API
+          </div>
+
+          <h3>
+            API & Intégrations
+          </h3>
+
           <p>
-            Connexion de services, API REST, connecteurs personnalisés
-            et échanges sécurisés entre vos différentes solutions.
+            Connexion de services,
+            API REST, connecteurs personnalisés
+            et échanges sécurisés entre
+            vos différentes solutions.
           </p>
+
         </article>
 
+
         <article class="service-card">
-          <div class="service-icon">IA</div>
-          <h3>IA appliquée au développement</h3>
+
+          <div class="service-icon">
+            IA
+          </div>
+
+          <h3>
+            IA appliquée au développement
+          </h3>
+
           <p>
-            Utilisation de l'intelligence artificielle pour accélérer
-            l'analyse, le prototypage, le développement,
+            Utilisation de l'intelligence artificielle
+            pour accélérer l'analyse,
+            le prototypage, le développement,
             les tests et la documentation.
           </p>
+
         </article>
 
       </div>
+
     </div>
+
   </section>
 
 
   <!-- EXPERTISE -->
+
   <section id="expertise">
+
     <div class="container approach-grid">
 
       <div>
-        <div class="section-label">Notre approche</div>
+
+        <div class="section-label">
+          Notre approche
+        </div>
 
         <h2>
-          Une solution doit être simple à utiliser,
+          Une solution doit être
+          simple à utiliser,
           fiable et évolutive.
         </h2>
 
         <p>
-          Notre priorité est de comprendre le besoin métier avant
-          de choisir la technologie. Power Platform constitue notre
-          expertise principale, complétée par d'autres technologies
+          Notre priorité est de comprendre le besoin
+          métier avant de choisir la technologie.
+          Power Platform constitue notre expertise
+          principale, complétée par d'autres technologies
           lorsqu'elles sont plus adaptées.
         </p>
+
 
         <div class="check-list">
 
           <div class="check-item">
-            <span class="check">✓</span>
+
+            <span class="check">
+              ✓
+            </span>
+
             <div>
-              <strong>Analyse du besoin</strong><br>
-              Comprendre les utilisateurs, les contraintes
+              <strong>
+                Analyse du besoin
+              </strong>
+
+              <br>
+
+              Comprendre les utilisateurs,
+              les contraintes
               et le processus métier.
             </div>
+
           </div>
 
+
           <div class="check-item">
-            <span class="check">✓</span>
+
+            <span class="check">
+              ✓
+            </span>
+
             <div>
-              <strong>Sécurité dès la conception</strong><br>
-              Gestion des accès, protection des données
+              <strong>
+                Sécurité dès la conception
+              </strong>
+
+              <br>
+
+              Gestion des accès,
+              protection des données
               et réduction des risques.
             </div>
+
           </div>
 
+
           <div class="check-item">
-            <span class="check">✓</span>
+
+            <span class="check">
+              ✓
+            </span>
+
             <div>
-              <strong>Performance & évolutivité</strong><br>
+              <strong>
+                Performance & évolutivité
+              </strong>
+
+              <br>
+
               Concevoir des solutions maintenables,
               optimisées et capables d'évoluer.
             </div>
+
           </div>
 
         </div>
+
       </div>
 
 
       <div class="tech-panel">
 
-        <h3>Environnement technique</h3>
+        <h3>
+          Environnement technique
+        </h3>
 
         <div class="tags">
-          <span class="tag">Power Apps</span>
-          <span class="tag">Power Automate</span>
-          <span class="tag">Dataverse</span>
-          <span class="tag">SharePoint</span>
-          <span class="tag">Microsoft 365</span>
-          <span class="tag">API REST</span>
-          <span class="tag">Connecteurs personnalisés</span>
-          <span class="tag">Excel</span>
-          <span class="tag">VBA</span>
-          <span class="tag">React</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">Python</span>
-          <span class="tag">Azure Functions</span>
-          <span class="tag">Intelligence artificielle</span>
+
+          <span class="tag">
+            Power Apps
+          </span>
+
+          <span class="tag">
+            Power Automate
+          </span>
+
+          <span class="tag">
+            Dataverse
+          </span>
+
+          <span class="tag">
+            SharePoint
+          </span>
+
+          <span class="tag">
+            Microsoft 365
+          </span>
+
+          <span class="tag">
+            API REST
+          </span>
+
+          <span class="tag">
+            Connecteurs personnalisés
+          </span>
+
+          <span class="tag">
+            Excel
+          </span>
+
+          <span class="tag">
+            VBA
+          </span>
+
+          <span class="tag">
+            React
+          </span>
+
+          <span class="tag">
+            TypeScript
+          </span>
+
+          <span class="tag">
+            Python
+          </span>
+
+          <span class="tag">
+            Django
+          </span>
+
+          <span class="tag">
+            Azure Functions
+          </span>
+
+          <span class="tag">
+            Intelligence artificielle
+          </span>
+
         </div>
 
       </div>
+
     </div>
+
+  </section>
+
+
+  <!-- REALISATIONS -->
+
+  <section
+    id="realisations"
+    class="section-alt"
+  >
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          Réalisations & projets
+        </div>
+
+        <h2>
+          Des solutions concrètes
+          pour des besoins réels.
+        </h2>
+
+        <p>
+          Quelques exemples de projets réalisés
+          dans le cadre professionnel
+          ou de développements sur mesure.
+        </p>
+
+      </div>
+
+
+      <!-- POWER PLATFORM -->
+
+      <div class="project-section">
+
+        <h3 class="project-section-title">
+          Réalisations Power Platform
+        </h3>
+
+        <div class="projects-grid">
+
+
+          <article class="project-card">
+
+            <div class="project-number">
+              PROJET 01
+            </div>
+
+            <span class="project-highlight">
+              + de 500 véhicules
+            </span>
+
+            <h3>
+              Outil régional de contrôle
+              de flotte automobile
+            </h3>
+
+            <p>
+              Conception d'une application métier
+              destinée au contrôle et au suivi
+              de plus de 500 véhicules
+              à l'échelle régionale.
+            </p>
+
+            <div class="project-tags">
+
+              <span class="project-tag">
+                Power Apps
+              </span>
+
+              <span class="project-tag">
+                Power Automate
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="project-card">
+
+            <div class="project-number">
+              PROJET 02
+            </div>
+
+            <span class="project-highlight">
+              + de 1 000 utilisateurs
+            </span>
+
+            <h3>
+              Application d'audit interne
+            </h3>
+
+            <p>
+              Développement d'un outil d'audit
+              interne utilisé par plus de
+              1 000 utilisateurs,
+              avec automatisation des traitements
+              et du suivi.
+            </p>
+
+            <div class="project-tags">
+
+              <span class="project-tag">
+                Power Apps
+              </span>
+
+              <span class="project-tag">
+                Power Automate
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="project-card">
+
+            <div class="project-number">
+              PROJET 03
+            </div>
+
+            <h3>
+              Outil de contrôle
+              Santé & Sécurité au Travail
+            </h3>
+
+            <p>
+              Digitalisation de contrôles SST
+              et automatisation des processus
+              associés afin de faciliter
+              la saisie, le suivi
+              et le traitement des données.
+            </p>
+
+            <div class="project-tags">
+
+              <span class="project-tag">
+                Power Apps
+              </span>
+
+              <span class="project-tag">
+                Power Automate
+              </span>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+
+      <!-- SUR MESURE -->
+
+      <div class="project-section">
+
+        <h3 class="project-section-title">
+          Développements sur mesure & IA
+        </h3>
+
+        <div class="projects-grid">
+
+
+          <article class="project-card">
+
+            <div class="project-number">
+              PROJET 04
+            </div>
+
+            <h3>
+              Site web pour
+              un club de boxe
+            </h3>
+
+            <p>
+              Conception et développement
+              d'un site vitrine responsive
+              pour présenter l'activité,
+              les informations du club
+              et faciliter sa visibilité en ligne.
+            </p>
+
+            <div class="project-tags">
+
+              <span class="project-tag">
+                HTML
+              </span>
+
+              <span class="project-tag">
+                CSS
+              </span>
+
+              <span class="project-tag">
+                JavaScript
+              </span>
+
+              <span class="project-tag">
+                IA
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="project-card">
+
+            <div class="project-number">
+              PROJET 05
+            </div>
+
+            <h3>
+              Outil Excel de suivi
+              des contrats de crédit
+            </h3>
+
+            <p>
+              Développement d'un outil métier
+              Excel permettant la saisie,
+              le contrôle et le suivi
+              des contrats de crédit,
+              avec automatisations VBA.
+            </p>
+
+            <div class="project-tags">
+
+              <span class="project-tag">
+                Excel
+              </span>
+
+              <span class="project-tag">
+                VBA
+              </span>
+
+              <span class="project-tag">
+                Automatisation
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="project-card">
+
+            <div class="project-number">
+              PROJET 06
+            </div>
+
+            <h3>
+              Applications Android
+              personnelles
+            </h3>
+
+            <p>
+              Conception et prototypage
+              d'applications mobiles Android
+              dans le cadre de projets personnels,
+              avec utilisation de l'IA
+              comme assistance au développement.
+            </p>
+
+            <div class="project-tags">
+
+              <span class="project-tag">
+                Android
+              </span>
+
+              <span class="project-tag">
+                Mobile
+              </span>
+
+              <span class="project-tag">
+                IA
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="project-card">
+
+            <div class="project-number">
+              PROJET 07
+            </div>
+
+            <h3>
+              Application métier
+              avec Django
+            </h3>
+
+            <p>
+              Développement d'une application
+              basée sur Django pour la gestion
+              de données et de processus,
+              destinée à une utilisation
+              sur environnement PC.
+            </p>
+
+            <div class="project-tags">
+
+              <span class="project-tag">
+                Python
+              </span>
+
+              <span class="project-tag">
+                Django
+              </span>
+
+              <span class="project-tag">
+                Web
+              </span>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 
 
   <!-- CERTIFICATIONS -->
-  <section id="certifications" class="section-alt">
+
+  <section id="certifications">
+
     <div class="container">
 
       <div class="section-heading">
-        <div class="section-label">Certifications</div>
 
-        <h2>Compétences Microsoft validées</h2>
+        <div class="section-label">
+          Certifications
+        </div>
+
+        <h2>
+          Compétences Microsoft validées
+        </h2>
 
         <p>
-          Des certifications et Applied Skills Microsoft
-          complètent l'expérience acquise sur des projets professionnels.
+          Des certifications et Applied Skills
+          Microsoft complètent l'expérience
+          acquise sur des projets professionnels.
         </p>
+
       </div>
 
 
       <div class="cert-grid">
 
+
         <article class="cert-card">
-          <span class="cert-badge">Microsoft Certified</span>
+
+          <span class="cert-badge">
+            Microsoft Certified
+          </span>
+
           <h3>
             Power Platform Fundamentals
             (PL-900)
           </h3>
+
           <p>
-            Certification Microsoft Power Platform.
+            Certification Microsoft :
+            Notions fondamentales
+            de Power Platform.
           </p>
+
+          <span class="cert-date">
+            Acquis le 2 novembre 2022
+          </span>
+
         </article>
 
+
         <article class="cert-card">
-          <span class="cert-badge">Microsoft Applied Skills</span>
+
+          <span class="cert-badge">
+            Microsoft Applied Skills
+          </span>
+
           <h3>
-            Créer et gérer des applications canevas avec Power Apps
+            Créer et gérer
+            des applications canevas
+            avec Power Apps
           </h3>
+
           <p>
-            Compétence Microsoft vérifiable en ligne.
+            Compétence Microsoft
+            vérifiable en ligne.
           </p>
+
+          <span class="cert-date">
+            Acquis le 10 décembre 2024
+          </span>
+
         </article>
 
+
         <article class="cert-card">
-          <span class="cert-badge">Microsoft Applied Skills</span>
+
+          <span class="cert-badge">
+            Microsoft Applied Skills
+          </span>
+
           <h3>
-            Créer et gérer des processus automatisés
+            Créer et gérer
+            des processus automatisés
             à l'aide de Power Automate
           </h3>
+
           <p>
-            Compétence Microsoft vérifiable en ligne.
+            Compétence Microsoft
+            vérifiable en ligne.
           </p>
+
+          <span class="cert-date">
+            Acquis le 6 septembre 2025
+          </span>
+
         </article>
 
       </div>
+
     </div>
+
   </section>
 
 
   <!-- A PROPOS -->
-  <section id="apropos">
+
+  <section
+    id="apropos"
+    class="section-alt"
+  >
+
     <div class="container">
 
       <div class="about-card">
 
         <div>
-          <div class="about-number">7+</div>
+
+          <div class="about-number">
+            7+
+          </div>
+
           <div class="about-number-label">
-            années d'expérience dans la conception
+            années d'expérience
+            dans la conception
             de solutions numériques.
           </div>
+
         </div>
 
+
         <div>
-          <div class="section-label" style="color:#22d3ee;">
+
+          <div
+            class="section-label"
+            style="color:#22d3ee;"
+          >
             À propos
           </div>
 
-          <h2>YPC Solutions</h2>
+          <h2>
+            YPC Solutions
+          </h2>
 
           <p>
-            YPC Solutions accompagne les professionnels dans la
-            digitalisation de leurs processus et la création
-            d'outils métier adaptés à leurs besoins.
+            YPC Solutions accompagne
+            les professionnels
+            dans la digitalisation
+            de leurs processus
+            et la création d'outils métier
+            adaptés à leurs besoins.
           </p>
 
           <p>
             Spécialisée dans Microsoft Power Platform,
-            l'activité s'appuie également sur le développement web,
-            Excel/VBA, les API, Python et l'intelligence artificielle
-            afin de proposer la solution la plus pertinente
-            selon chaque projet.
+            l'activité s'appuie également
+            sur le développement web,
+            Excel/VBA, les API,
+            Python et l'intelligence artificielle
+            afin de proposer la solution
+            la plus pertinente selon chaque projet.
           </p>
 
         </div>
 
       </div>
+
     </div>
+
   </section>
 
 
   <!-- CONTACT -->
-  <section id="contact" class="section-alt">
+
+  <section id="contact">
+
     <div class="container contact-grid">
 
       <div class="contact-info">
@@ -1089,26 +2194,42 @@
         </h2>
 
         <p>
-          Vous avez besoin d'une application métier,
-          d'une automatisation, d'un outil Excel,
-          d'un site web ou d'une intégration spécifique ?
+          Vous avez besoin
+          d'une application métier,
+          d'une automatisation,
+          d'un outil Excel,
+          d'un site web
+          ou d'une intégration spécifique ?
           Présentez-nous votre besoin.
         </p>
 
         <div class="contact-note">
-          Le formulaire sécurisé sera activé prochainement.
-          Aucune donnée n'est actuellement transmise depuis cette page.
+
+          Le formulaire sécurisé
+          sera activé prochainement.
+
+          Aucune donnée
+          n'est actuellement transmise
+          depuis cette page.
+
         </div>
 
       </div>
 
 
-      <form id="contactForm" novalidate>
+      <form
+        id="contactForm"
+        novalidate
+      >
 
         <div class="form-row">
 
           <div class="field">
-            <label for="name">Nom *</label>
+
+            <label for="name">
+              Nom *
+            </label>
+
             <input
               id="name"
               name="name"
@@ -1117,10 +2238,16 @@
               autocomplete="name"
               required
             >
+
           </div>
 
+
           <div class="field">
-            <label for="company">Entreprise</label>
+
+            <label for="company">
+              Entreprise
+            </label>
+
             <input
               id="company"
               name="company"
@@ -1128,13 +2255,18 @@
               maxlength="100"
               autocomplete="organization"
             >
+
           </div>
 
         </div>
 
 
         <div class="field">
-          <label for="email">Adresse e-mail *</label>
+
+          <label for="email">
+            Adresse e-mail *
+          </label>
+
           <input
             id="email"
             name="email"
@@ -1143,27 +2275,64 @@
             autocomplete="email"
             required
           >
+
         </div>
 
 
         <div class="field">
-          <label for="subject">Votre besoin *</label>
 
-          <select id="subject" name="subject" required>
-            <option value="">Sélectionner</option>
-            <option>Power Platform</option>
-            <option>Automatisation</option>
-            <option>Excel / VBA</option>
-            <option>Développement Web</option>
-            <option>API / Intégration</option>
-            <option>Intelligence artificielle</option>
-            <option>Autre projet</option>
+          <label for="subject">
+            Votre besoin *
+          </label>
+
+          <select
+            id="subject"
+            name="subject"
+            required
+          >
+
+            <option value="">
+              Sélectionner
+            </option>
+
+            <option>
+              Power Platform
+            </option>
+
+            <option>
+              Automatisation
+            </option>
+
+            <option>
+              Excel / VBA
+            </option>
+
+            <option>
+              Développement Web
+            </option>
+
+            <option>
+              API / Intégration
+            </option>
+
+            <option>
+              Intelligence artificielle
+            </option>
+
+            <option>
+              Autre projet
+            </option>
+
           </select>
+
         </div>
 
 
         <div class="field">
-          <label for="message">Message *</label>
+
+          <label for="message">
+            Message *
+          </label>
 
           <textarea
             id="message"
@@ -1172,12 +2341,21 @@
             placeholder="Décrivez brièvement votre besoin..."
             required
           ></textarea>
+
         </div>
 
 
         <!-- Champ invisible anti-bot -->
-        <div class="honeypot" aria-hidden="true">
-          <label for="website">Site internet</label>
+
+        <div
+          class="honeypot"
+          aria-hidden="true"
+        >
+
+          <label for="website">
+            Site internet
+          </label>
+
           <input
             id="website"
             name="website"
@@ -1185,110 +2363,181 @@
             tabindex="-1"
             autocomplete="off"
           >
+
         </div>
 
 
-        <button class="btn btn-primary" type="submit">
+        <button
+          class="btn btn-primary"
+          type="submit"
+        >
           Envoyer ma demande
         </button>
+
 
         <div
           class="form-status"
           id="formStatus"
-          aria-live="polite">
+          aria-live="polite"
+        >
         </div>
 
       </form>
 
     </div>
+
   </section>
 
 </main>
 
 
 <footer>
+
   <div class="container footer-content">
 
     <div>
+
       <div class="footer-brand">
         YPC Solutions
       </div>
 
       <div>
-        Applications métiers • Automatisation • Web • IA
+        Applications métiers
+        • Automatisation
+        • Web
+        • IA
       </div>
+
     </div>
+
 
     <div class="footer-links">
-      <a href="#">Mentions légales</a>
-      <a href="#">Confidentialité</a>
+
+      <a href="#">
+        Mentions légales
+      </a>
+
+      <a href="#">
+        Confidentialité
+      </a>
+
     </div>
 
+
     <div>
-      © <span id="year"></span> YPC Solutions
+      ©
+      <span id="year"></span>
+      YPC Solutions
     </div>
 
   </div>
+
 </footer>
 
 
 <script>
-  const menuButton = document.getElementById("menuButton");
-  const navMenu = document.getElementById("navMenu");
 
-  menuButton.addEventListener("click", () => {
-    const opened = navMenu.classList.toggle("open");
+  const menuButton =
+    document.getElementById("menuButton");
 
-    menuButton.setAttribute(
-      "aria-expanded",
-      opened ? "true" : "false"
-    );
-  });
+  const navMenu =
+    document.getElementById("navMenu");
 
 
-  document.querySelectorAll("#navMenu a").forEach(link => {
-    link.addEventListener("click", () => {
-      navMenu.classList.remove("open");
-      menuButton.setAttribute("aria-expanded", "false");
-    });
-  });
+  menuButton.addEventListener(
+    "click",
+    () => {
 
+      const opened =
+        navMenu.classList.toggle("open");
 
-  document.getElementById("year").textContent =
-    new Date().getFullYear();
+      menuButton.setAttribute(
+        "aria-expanded",
+        opened
+          ? "true"
+          : "false"
+      );
 
-
-  const form = document.getElementById("contactForm");
-  const status = document.getElementById("formStatus");
-
-  form.addEventListener("submit", function(event) {
-
-    event.preventDefault();
-
-    const honeypot =
-      document.getElementById("website").value.trim();
-
-    if (honeypot !== "") {
-      return;
     }
+  );
 
-    if (!form.checkValidity()) {
+
+  document
+    .querySelectorAll("#navMenu a")
+    .forEach(link => {
+
+      link.addEventListener(
+        "click",
+        () => {
+
+          navMenu.classList.remove("open");
+
+          menuButton.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+        }
+      );
+
+    });
+
+
+  document
+    .getElementById("year")
+    .textContent =
+      new Date().getFullYear();
+
+
+  const form =
+    document.getElementById("contactForm");
+
+  const status =
+    document.getElementById("formStatus");
+
+
+  form.addEventListener(
+    "submit",
+    function(event) {
+
+      event.preventDefault();
+
+
+      const honeypot =
+        document
+          .getElementById("website")
+          .value
+          .trim();
+
+
+      if (honeypot !== "") {
+        return;
+      }
+
+
+      if (!form.checkValidity()) {
+
+        status.textContent =
+          "Merci de compléter correctement les champs obligatoires.";
+
+        status.style.color =
+          "#b91c1c";
+
+        form.reportValidity();
+
+        return;
+      }
+
 
       status.textContent =
-        "Merci de compléter correctement les champs obligatoires.";
+        "Le formulaire est prêt. L'envoi sécurisé sera activé à l'étape suivante.";
 
-      status.style.color = "#b91c1c";
+      status.style.color =
+        "#047857";
 
-      form.reportValidity();
-
-      return;
     }
+  );
 
-    status.textContent =
-      "Le formulaire est prêt. L'envoi sécurisé sera activé à l'étape suivante.";
-
-    status.style.color = "#047857";
-  });
 </script>
 
 </body>
